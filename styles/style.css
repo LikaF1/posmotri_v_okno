@@ -36,9 +36,11 @@ ul,
 ol {
   list-style: none;
 }
+
 fieldset {
   border: none;
 }
+
 .page {
   display: flex;
   justify-content: center;
@@ -48,7 +50,6 @@ fieldset {
 .content {
   max-height: 533px;
   min-width: 1140px;
-
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -60,6 +61,7 @@ fieldset {
   flex-direction: row;
   justify-content: space-between;
 }
+
 .content__details {
   width: 100%;
   height: 100%;
@@ -67,50 +69,56 @@ fieldset {
   flex-direction: column;
   row-gap: 26px;
 }
+
 .content__list {
   overflow: auto;
   max-height: 298px;
   position: relative;
 }
+
 .content__list-item:not(:last-child) {
   margin-bottom: 30px;
 }
+
 .result__video-container {
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
-  position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
+
 .result__video {
   width: 100%;
   height: 100%;
-
-  position: absolute;
   object-fit: cover;
-  top: 0;
-  left: 0;
 }
+
 .content__video-card {
   display: flex;
   align-items: flex-start;
 }
+
 .content__video-card-thumbnail {
   width: 194px;
   height: 103px;
   flex-shrink: 0;
 }
+
 .content__video-card-description-container {
   flex-grow: 1;
   padding: 2px 0 4px 2px;
 }
+
 .search-form__fieldset-title {
   font-weight: 100;
   font-size: 18px;
   line-height: 22px;
   margin-bottom: 5px;
 }
+
 .title {
   font-family: 'Oswald';
   font-style: normal;
@@ -120,15 +128,18 @@ fieldset {
   text-transform: uppercase;
   color: #ffffff;
 }
+
 .content__accent {
   color: #545050;
 }
+
 .content__card-link {
   color: white;
   text-decoration: none;
   display: block;
   margin: 2px;
 }
+
 .content__video-card-title {
   font-family: 'Oswald';
   font-style: normal;
@@ -138,6 +149,7 @@ fieldset {
   text-transform: uppercase;
   margin-top: 5px;
 }
+
 .content__video-card-description {
   font-family: 'Fira Sans Condensed';
   font-style: normal;
@@ -145,6 +157,7 @@ fieldset {
   line-height: 16px;
   margin-top: 6px;
 }
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
@@ -154,10 +167,12 @@ fieldset {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
 .search-form__label {
   display: flex;
   width: fit-content;
 }
+
 .search-form__checkbox,
 .content__list-item,
 .search-form__checkbox-list,
@@ -165,6 +180,7 @@ fieldset {
 .button {
   cursor: pointer;
 }
+
 .search-form__textfield {
   width: 225px;
   height: 27px;
@@ -180,10 +196,12 @@ fieldset {
   color: #ffffff;
   appearance: none;
 }
+
 .search-form__checkbox-list {
   display: flex;
   column-gap: 15px;
 }
+
 .search-form__pseudo-checkbox {
   width: 19px;
   height: 19px;
@@ -193,9 +211,9 @@ fieldset {
   margin-top: 1px;
   position: relative;
 }
+
 .button {
   background-color: transparent;
-
   border: 1px solid #ffffff;
   font-family: 'Fira Sans Condensed';
   font-style: normal;
@@ -206,10 +224,12 @@ fieldset {
   color: #ffffff;
   align-self: flex-end;
 }
+
 .search-form__submit-button {
   width: 194px;
   height: 34px;
 }
+
 .more-button {
   width: 399px;
   height: 34px;
@@ -218,68 +238,82 @@ fieldset {
 .search-form__textfield:active {
   border: none;
 }
+
 .search-form__textfield:focus {
   border-width: 1px 0px;
   border-style: solid;
   border-color: #ffffff;
   outline: none;
 }
+
 .search-form__label:has(.search-form__textfield:focus-visible) {
   border: 1px solid #ffffff;
 }
+
 .search-form__label:has(.search-form__textfield:active) {
   border: 1px solid #ffffff;
 }
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
   display: block;
   width: 15px;
   height: 15px;
   background-color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 1px;
+  margin-left: 1px;
 }
 
 .search-form__checkbox:focus {
   outline: none;
 }
+
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   border: 1px solid #ffffff;
 }
+
 .search-form__label:has(.search-form__checkbox:focus-visible) {
   border: 1px solid #ffffff;
 }
+
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
 }
+
 .button:hover {
   text-decoration: underline;
 }
+
 .button:active {
   background-color: #545050;
 }
+
 .button:focus {
   outline: none;
 }
+
 .button:focus-visible {
   outline: 1px solid #ffffff;
   outline-offset: 1px;
 }
+
 .content__card-link_current {
   background-color: #545050;
 }
+
 .content__list-item:active {
   background-color: #545050;
 }
+
 .content__list-item:hover {
   text-decoration: underline;
 }
+
 .content__list-item:focus {
   outline: none;
 }
+
 .content__list-item:focus-visible {
   border: 1px solid #ffffff;
 }
