@@ -322,9 +322,9 @@ outline: none;
 }
 
 .content__list-item:focus-visible {
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
 }
 
 .content__card-link:focus-visible {
-  border: 1px solid #ffffff;
+  outline: 1px solid #ffffff;
 }
